@@ -3,7 +3,7 @@
 # 🇧🇩 BD Agent
 ### Multi-Tool AI Agent for Bangladesh
 
-**An LLM-powered agent that answers real questions about Bangladeshi hospitals, institutions, and restaurants — grounded in real datasets, not hallucinations.**
+**An LLM-powered agent that answers real questions about Bangladeshi hospitals, institutions, and restaurants - grounded in real datasets, not hallucinations.**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-Agent%20Framework-1C3C3C?style=flat)](https://www.langchain.com/)
@@ -25,9 +25,9 @@
 - 🧠 **An LLM-based agent** that reasons about which tool best answers a given question
 - 🌐 **A live web-search tool** for general knowledge questions outside the datasets
 
-The result: a domain-specific assistant that gives **accurate, data-backed answers** — a practical demonstration of **retrieval-augmented, tool-using AI systems**, one of the most in-demand patterns in applied AI/ML engineering today.
+The result: a domain-specific assistant that gives **accurate, data-backed answers** - a practical demonstration of **retrieval-augmented, tool-using AI systems**, one of the most in-demand patterns in applied AI/ML engineering today.
 
-## 💬 Example Queries
+## Example Queries
 
 ```
 > How many hospitals are in Dhaka?
@@ -37,11 +37,11 @@ The result: a domain-specific assistant that gives **accurate, data-backed answe
 > What is the role of DGHS in Bangladesh?
 ```
 
-The agent automatically routes each question to the correct tool — SQL query against the right database, or a live web search — without the user needing to specify which.
+The agent automatically routes each question to the correct tool - SQL query against the right database, or a live web search - without the user needing to specify which.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
                          ┌──────────────────────┐
@@ -74,7 +74,7 @@ The agent automatically routes each question to the correct tool — SQL query a
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 bd_multi_tool_ai_agent/
@@ -88,7 +88,7 @@ bd_multi_tool_ai_agent/
 └── .gitignore                 # Excludes secrets, DBs, venv
 ```
 
-### 📊 Datasets
+### Datasets
 
 | Source (HuggingFace) | Local Table |
 |---|---|
@@ -96,11 +96,11 @@ bd_multi_tool_ai_agent/
 | `Mahadih534/all-bangladeshi-hospitals` | `hospitals` |
 | `Mahadih534/Bangladeshi-Restaurant-Data` | `restaurants` |
 
-Adding a new dataset is a one-line change — add a `save_dataset_to_db(dataset_name, table_name, db_path)` call in `ingest.py`.
+Adding a new dataset is a one-line change - add a `save_dataset_to_db(dataset_name, table_name, db_path)` call in `ingest.py`.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -145,7 +145,7 @@ python agent.py "How many hospitals are in Dhaka?" # direct query
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 This project showcases practical, job-relevant experience with:
 
@@ -158,7 +158,7 @@ This project showcases practical, job-relevant experience with:
 
 ---
 
-## 🔍 Verifying the Databases
+## Verifying the Databases
 
 ```bash
 sqlite3 dbs/hospitals.db "PRAGMA table_info('hospitals');"
@@ -177,7 +177,7 @@ conn.close()
 
 ---
 
-## 🛡️ Security Notes
+## Security Notes
 
 The following are excluded from version control via `.gitignore`:
 - `.env` — API keys
@@ -195,7 +195,7 @@ git push -f origin main
 
 ---
 
-## 🧯 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |---|---|
@@ -206,7 +206,7 @@ git push -f origin main
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Add more Bangladesh-specific datasets (transport, weather, government services)
 - [ ] Build a lightweight web UI (Streamlit/FastAPI)
@@ -215,24 +215,24 @@ git push -f origin main
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/delowarhossaincse63/bd_multi_tool_ai_agent/issues).
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 📬 Contact
+## Contact
 
 **Delowar Hossain**
-📧 delowarhossain.cse.63@gmail.com
+📧 delowar.swe@gmail.com
 🔗 [GitHub](https://github.com/delowarhossaincse63)
 
 ---
 
 <div align="center">
 
-⭐ If you find this project useful, consider giving it a star!
+ If you find this project useful, consider giving it a star!
 
 </div>
